@@ -3,11 +3,11 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  &container {
+    display: flex;
+  }
 }
 
-.header-container {
-  display: flex;
-}
 .header-navigation {
   display: flex;
   align-items: center;
@@ -24,11 +24,12 @@
   align-items: center;
   margin-left: 93px;
 }
-.header-item:not(:last-child) {
-  margin-right: 50px;
-}
+
 .header-item {
   position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
 }
 
 .logo {
@@ -41,11 +42,11 @@
   margin-left: 15px;
   padding-top: 24px;
   padding-bottom: 25px;
+  &studio {
+    color: #000000;
+  }
 }
 
-.logo-studio {
-  color: #000000;
-}
 .nav-link {
   color: var(--second-tittle-color);
   font-weight: 500;
@@ -58,14 +59,12 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.nav-link:hover,
-.nav-link:focus {
-  color: var(--accent-color);
-}
-.header-contacts {
-  align-content: center;
-}
+
 .header-mail {
   display: flex;
   font-weight: 500;
@@ -78,14 +77,14 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-mail-svg {
-  margin-right: 10px;
-  fill: currentColor;
-}
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
+  &svg {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-tel {
@@ -99,12 +98,12 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
-}
-.header-tel-svg {
-  margin-right: 10px;
-  fill: currentColor;
+  &svg {
+    margin-right: 10px;
+    fill: currentColor;
+  }
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }

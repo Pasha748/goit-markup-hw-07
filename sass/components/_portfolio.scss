@@ -30,15 +30,15 @@
   transition-property: background-color, color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    color: var(--second-btn-color);
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
 }
 
-.filter-button:hover,
-.filter-button:focus {
-  background-color: var(--accent-color);
-  color: var(--second-btn-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 2px 2px rgba(0, 0, 0, 0.12);
-}
 .filter-list {
   justify-content: center;
   display: flex;
@@ -71,6 +71,9 @@
   transition-property: box-shadow;
   transition: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 }
 .products-overflow {
   position: relative;
@@ -92,21 +95,25 @@
 }
 .port-products-link {
   display: block;
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+  &:hover .port-products-window,
+  &:focus .port-products-window {
+    left: 0;
+    top: 0;
+    width: 370px;
+    height: 294px;
+    padding: 0 24px 0 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+  }
 }
-.port-products-link:hover .port-products-window,
-.port-products-link:focus .port-products-window {
-  left: 0;
-  top: 0;
-  width: 370px;
-  height: 294px;
-  padding: 0 24px 0 24px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: rgba(33, 150, 243, 0.9);
-  transform: translateY(0);
-}
-
 .products-window-text {
   font-size: 18px;
   line-height: 1.6;
@@ -115,14 +122,6 @@
 }
 .products-container {
   border: 1px solid #eeeeee;
-}
-.port-products-link:hover,
-.port-products-link:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
-.port-products-item:nth-child(3n) {
-  margin-right: 0;
 }
 
 .port-products-text {

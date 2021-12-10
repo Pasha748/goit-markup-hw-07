@@ -8,6 +8,10 @@
   justify-content: center;
   align-items: center;
 }
+.benefits {
+  padding-top: 94px;
+  background-color: var(--main-background-color);
+}
 
 .benefits-title {
   border: 0;
@@ -19,16 +23,11 @@
   position: absolute;
   width: 1px;
 }
-.benefits {
-  padding-top: 94px;
-}
+
 .benefits-list {
   display: flex;
 }
 
-.benefits {
-  background-color: var(--main-background-color);
-}
 .benefits-item:not(:last-child) {
   margin-right: 30px;
   max-width: 270px;
