@@ -1,0 +1,135 @@
+.filter-section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.main-products-title {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+}
+
+.filter-button {
+  border: none;
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  cursor: pointer;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-btn-color);
+  background-color: #f5f4fa;
+  border-radius: 4px;
+  padding: 6px 22px;
+  transition-property: background-color, color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  background-color: var(--accent-color);
+  color: var(--second-btn-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter-list {
+  justify-content: center;
+  display: flex;
+}
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+.products-container {
+  padding: 20px 24px;
+}
+.port-products-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+  margin-bottom: -30px;
+}
+
+.port-products-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--third-tittle-color);
+}
+.port-products-item {
+  margin-right: 30px;
+  box-sizing: border-box;
+  margin-bottom: 30px;
+  width: 370px;
+  transition-property: box-shadow;
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.products-overflow {
+  position: relative;
+  overflow: hidden;
+}
+.port-products-window {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 0;
+  top: 0;
+  width: 370px;
+  height: 294px;
+  transition-property: transform;
+  transform: translateY(100%);
+  transition: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+.port-products-link {
+  display: block;
+}
+.port-products-link:hover .port-products-window,
+.port-products-link:focus .port-products-window {
+  left: 0;
+  top: 0;
+  width: 370px;
+  height: 294px;
+  padding: 0 24px 0 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(33, 150, 243, 0.9);
+  transform: translateY(0);
+}
+
+.products-window-text {
+  font-size: 18px;
+  line-height: 1.6;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.products-container {
+  border: 1px solid #eeeeee;
+}
+.port-products-link:hover,
+.port-products-link:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.port-products-item:nth-child(3n) {
+  margin-right: 0;
+}
+
+.port-products-text {
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: var(--main-text-color);
+  margin-top: 4px;
+}

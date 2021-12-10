@@ -1,1 +1,11 @@
-@import './header';
+@import './utils/variables';
+@import './utils/general';
+@import './components/_header.scss';
+@import './components/_hero.scss';
+@import './components/_benefits.scss';
+@import './components/_activity.scss';
+@import './components/_team.scss';
+@import './components/_clients.scss';
+@import './components/_footer.scss';
+@import './components/_backdrop.scss';
+@import './components/_portfolio.scss';
