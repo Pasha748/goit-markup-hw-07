@@ -13,13 +13,8 @@
     margin-right: 30px;
   }
 }
-.activity-item .activity-title {
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: var(--second-tittle-color);
+.activity-title {
+  @include title(700, 36px, 1.17, center, 0.03em, var(--second-tittle-color));
 }
 .activity-window {
   position: absolute;
