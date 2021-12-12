@@ -458,11 +458,11 @@ body {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--second-tittle-color);
+  margin-bottom: 50px;
 }
 
 .clients-list {
   display: flex;
-  margin-top: 50px;
 }
 
 .clients-list__item {
@@ -470,12 +470,8 @@ body {
   height: 92px;
 }
 
-.clients-list__item:not(last-child) {
+.clients-list__item:not(:last-child) {
   margin-right: 30px;
-}
-
-.clients-list__item:last-child {
-  margin-right: -30px;
 }
 
 .clients-list__link {
