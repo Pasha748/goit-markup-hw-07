@@ -3,35 +3,10 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
-  &container {
-    display: flex;
-  }
 }
-
-.header-navigation {
+.header-container {
   display: flex;
-  align-items: center;
 }
-
-.header-contacts {
-  display: flex;
-  margin-left: auto;
-  align-items: center;
-}
-
-.header-list {
-  display: flex;
-  align-items: center;
-  margin-left: 93px;
-}
-
-.header-item {
-  position: relative;
-  &:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
 .logo {
   font-family: Raleway;
   font-weight: 700;
@@ -42,12 +17,26 @@
   margin-left: 15px;
   padding-top: 24px;
   padding-bottom: 25px;
-  &studio {
+  &__header {
     color: #000000;
+    margin-right: 93px;
   }
 }
-
-.nav-link {
+.header-navigation {
+  display: flex;
+  align-items: center;
+}
+.header-navigation__list {
+  display: flex;
+  align-items: center;
+}
+.header-navigation__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+.header-navigation__link {
   color: var(--second-tittle-color);
   font-weight: 500;
   font-size: 14px;
@@ -64,8 +53,14 @@
     color: var(--accent-color);
   }
 }
-
-.header-mail {
+.header-contacts {
+  margin-left: auto;
+}
+.header-contacts_list {
+  display: flex;
+  align-items: center;
+}
+.header-contacts__mail {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -77,17 +72,12 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &svg {
-    margin-right: 10px;
-    fill: currentColor;
-  }
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
 }
-
-.header-tel {
+.header-contacts__tel {
   display: flex;
   font-weight: 500;
   font-size: 14px;
@@ -98,12 +88,12 @@
   transition-property: color;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  &svg {
-    margin-right: 10px;
-    fill: currentColor;
-  }
   &:hover,
   &:focus {
     color: var(--accent-color);
   }
+}
+.header-contacts__svg {
+  margin-right: 10px;
+  fill: currentColor;
 }

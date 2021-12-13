@@ -37,7 +37,7 @@ body {
   cursor: pointer;
 }
 
-.nav-link.current {
+.header-navigation__link.current {
   position: relative;
   color: var(--accent-color);
   &::after {
@@ -50,9 +50,9 @@ body {
     bottom: -1px;
     left: 0;
   }
-  &:focus {
-    outline: 0;
-  }
+}
+:focus {
+  outline: 0;
 }
 .visually-hidden {
   border: 0;
