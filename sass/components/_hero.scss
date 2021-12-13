@@ -9,7 +9,7 @@
   padding-bottom: 200px;
 }
 
-.hero-title {
+.hero-section__title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -21,7 +21,7 @@
   margin: auto;
 }
 
-.hero-button {
+.hero-section__button {
   background-color: var(--accent-color);
   color: var(--second-btn-color);
   font-family: inherit;
