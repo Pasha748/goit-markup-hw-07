@@ -167,6 +167,7 @@ body {
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  padding-left: 15px;
 }
 
 .header-container {
@@ -180,7 +181,6 @@ body {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-left: 15px;
   padding-top: 24px;
   padding-bottom: 25px;
 }
@@ -280,7 +280,7 @@ body {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
 }
@@ -535,7 +535,12 @@ body {
   display: flex;
 }
 
-.logo__footer {
+.footer__logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.footer__studio {
   color: #ffffff;
 }
 
@@ -916,6 +921,8 @@ body {
 
 .port-products__container {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
+  box-sizing: border-box;
 }
 
 .port-products__list {

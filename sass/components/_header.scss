@@ -3,6 +3,7 @@
   display: flex;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  padding-left: 15px;
 }
 .header-container {
   display: flex;
@@ -14,7 +15,6 @@
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: #2196f3;
-  margin-left: 15px;
   padding-top: 24px;
   padding-bottom: 25px;
   &__header {

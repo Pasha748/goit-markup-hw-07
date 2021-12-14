@@ -7,7 +7,11 @@
 .footer__container {
   display: flex;
 }
-.logo__footer {
+.footer__logo {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.footer__studio {
   color: #ffffff;
 }
 .address__item {
